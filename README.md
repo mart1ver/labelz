@@ -1,15 +1,19 @@
-labelz
+labelz-fr
 ======
 
-Label configurator
+Label configurator version fr
 
-Geared to the needs of Metalab Vienna.
+
+Developpe a l'origine pour le Metalab de Vienne.
+Adapte en francais pour l'Emancipo-la , paris
+
 Tested with Brother Ptouch QL700
+Will be tested whith cheeper 
 
-How to use:
+Usage:
 
 Get a copy and open the index.html 
-or go to http://metalab.github.io/labelz/
+
 
 
 
