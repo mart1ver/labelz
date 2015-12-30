@@ -25,60 +25,60 @@
 				<h2>2. Informations</h2>
 				<ul class="form" id="configPersonal">
 					<li>
-						<label>This thing is called</label>
+						<label>Cet objet s'appele</label>
 						<input placeholder="" type="text" id="configPersonalName" class="liveinput inputText" />
 					</li>
 					<li>
-						<label>Your name</label>
+						<label>Votre nom</label>
 						<input placeholder="" type="text" id="configPersonalOwner" class="liveinput inputText" />
 					</li>
 					<li>
 						<label>Contact</label>
-						<input placeholder="e.g. email, jabber or mobile" type="text" id="configPersonalContact" class="liveinput inputText" />
+						<input placeholder="ex. email, jabber ou mobile" type="text" id="configPersonalContact" class="liveinput inputText" />
 					</li>
 					<li>
-						<label>appreciated price in &euro;</label>
+						<label>Prix estime en &euro;</label>
 						<input type="number" min="0" id="configPersonalPrice" class="liveinput inputText" />
 					</li>
 					<li>
 						<label>Permissions</label>
 						<select id="configPersonalPermissions" class="liveinput inputSelect">
-							<option selected="selected">free to use</option>
-							<option>free to use after instruction</option>
-							<option>for private use only</option>
-							<option>for sale</option>
+							<option selected="selected">libre d'usage</option>
+							<option>libre d'usage apres initiation</option>
+							<option>reserve a un usage personnel</option>
+							<option>a vendre</option>
 						</select>
 					</li>
 					<li>
-						<label>What if annoying?</label>
+						<label>Que faire si l'ojet encombre?</label>
 						<select id="configPersonalAnnoying" class="liveinput inputSelect">
-							<option selected="selected">throw away</option>
-							<option>leave it</option>
-							<option>move it</option>
-							<option>notify owner</option>
+							<option selected="selected">evacuer</option>
+							<option>ne pas toucher!</option>
+							<option>deplacez ou rangez le</option>
+							<option>prevenir le proprietaire</option>
 						</select>
 					</li>
 					<li>
-						<label>What if broken?</label>
+						<label>que faire si l'objet est casse?</label>
 						<select id="configPersonalBroken" class="liveinput inputSelect">
-							<option selected="selected">throw away</option>
-							<option>replace &amp; notify owner </option>
-							<option>notify owner</option>
+							<option selected="selected">evacuer</option>
+							<option>remplacer &amp; prevenir le proprietaire </option>
+							<option>prevenir le proprietaire</option>
 						</select>
 					</li>
 					<li>
-						<label>URL for more Infos </label>
-						<input type="url" placeholder="e.g. wiki page" id="configPersonalUrl" class="liveinput inputText" />
+						<label>URL pour plus d'infos </label>
+						<input type="url" placeholder="ex. page du Wiki" id="configPersonalUrl" class="liveinput inputText" />
 					</li>
 					<li>
-						<label for="configPersonalPrice">timestamp</label>
+						<label for="configPersonalPrice">Date du jour</label>
 						<input type="date" id="configPersonalDate" class="liveinput currentDate inputText" />
 					</li>
 				</ul>
 				<ul class="form" id="configFreeStyle">
 					<li>
-						<label>Hint: You can use HTML-tags in here</label>
-						<textarea id="configFreeStyleText" class="liveinput inputText">Your text goes here…</textarea>
+						<label>Hint: Vous pouvez placer de alises HTML ici!</label>
+						<textarea id="configFreeStyleText" class="liveinput inputText">votre texte ici…</textarea>
 					</li>
 				</ul>
 			</div>
@@ -91,45 +91,45 @@
 					<li id="outputPersonal">
 						<span id="displayPersonalName" class="livedisplay highlight"></span>
 						<span id="surrPersonalOwner">
-							is owned by
+							est a
 							<span id="displayPersonalOwner" class="livedisplay highlight"></span>.
 						</span>
-						<span>It's</span>
+						<span>Il est </span>
 						<span class="livedisplay highlight" id="displayPersonalPermissions"></span>.
 						<span id="surrPersonalPrice">
-							It costs approximately <span class="highlight">&euro;</span><span class="livedisplay highlight" id="displayPersonalPrice"></span>.
+							Il coute a peut pres <span class="highlight">&euro;</span><span class="livedisplay highlight" id="displayPersonalPrice"></span>.
 						</span>
 
-						<span>If broken,</span>
+						<span>Si il est casse,</span>
 						<span id="displayPersonalBroken" class="livedisplay highlight"></span>.
-						<span>If annoying,</span>
+						<span>si il encombre,</span>
 						<span id="displayPersonalAnnoying" class="livedisplay highlight"></span>.
 						<br /><span id="surrPersonalContact">Contact: </span>
 						<span id="displayPersonalContact" class="livedisplay highlight"></span>
-						<br /><span id="surrPersonalUrl">More Infos: </span><span class="livedisplay" id="displayPersonalUrl"></span>
-						<br /><span>Created:</span> <span class="livedisplay displayDate" id="displayPersonalDate"></span>
+						<br /><span id="surrPersonalUrl">plus d'Infos: </span><span class="livedisplay" id="displayPersonalUrl"></span>
+						<br /><span>Cree le:</span> <span class="livedisplay displayDate" id="displayPersonalDate"></span>
 					</li>
 					<li id="outputPersonalWithQRCode">
                         <span id="displayPersonalQRCode" class="qrCode"></span>
 						<span id="displayPersonalNameWithQRCode" class="livedisplay highlight"></span>
 						<span id="surrPersonalOwnerWithQRCode">
-							is owned by
+							est a
 							<span id="displayPersonalOwnerWithQRCode" class="livedisplay highlight"></span>.
 						</span>
-						<span>It's</span>
+						<span>Il est </span>
 						<span class="livedisplay highlight" id="displayPersonalPermissionsWithQRCode"></span>.
 						<span id="surrPersonalPriceWithQRCode" style="display:none">
-							It costs approximately <span class="highlight">&euro;</span><span class="livedisplay highlight" id="displayPersonalPriceWithQRCode"></span>.
+							Il coute a peut pres <span class="highlight">&euro;</span><span class="livedisplay highlight" id="displayPersonalPriceWithQRCode"></span>.
 						</span>
 
-						<span>If broken,</span>
+						<span>Si il est casse,</span>
 						<span id="displayPersonalBrokenWithQRCode" class="livedisplay highlight"></span>.
-						<span>If annoying,</span>
+						<span>Si il encombre,</span>
 						<span id="displayPersonalAnnoyingWithQRCode" class="livedisplay highlight"></span>.
 						<br /><span id="surrPersonalContactWithQRCode">Contact: </span>
 						<span id="displayPersonalContactWithQRCode" class="livedisplay highlight"></span>
-						<br /><span id="surrPersonalUrlWithQRCode">More Infos: </span><span class="livedisplay" id="displayPersonalUrlWithQRCode"></span>
-						<br /><span>Created:</span> <span class="livedisplay displayDate" id="displayPersonalDateWithQRCode"></span>
+						<br /><span id="surrPersonalUrlWithQRCode">Plus d'infos: </span><span class="livedisplay" id="displayPersonalUrlWithQRCode"></span>
+						<br /><span>Cree le:</span> <span class="livedisplay displayDate" id="displayPersonalDateWithQRCode"></span>
 					</li>                    
 					<li id="outputFreeStyle">
 						<span id="displayFreeStyleText" class="livedisplay">Votre texte ici...</span>
