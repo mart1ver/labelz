@@ -6,16 +6,16 @@
 		<link rel="stylesheet" type="text/css" href="css/labelz.css">
 	</head>
 	<body>
-		<h1 class="doNotPrint">Imprimez une ettiquette!</h1>
+		<h1 class="doNotPrint">Imprimez une étiquette!</h1>
 
 		<div class="doNotPrint config">
 			<div class="section">
-				<h2>1. Choisisez le modele</h2>
+				<h2>1. Choisisez le modèle</h2>
 				<ul id="chooseType">
 					<li id="choosePersonal" class="typeSelected">Objet personnel</li>
-					<li id="choosePersonalWithQRCode">Objet personnel avec qr code</li>
-                    <li id="chooseFreeStyle">free style</li>
-                    <li id="chooseFreeStyleWithQRCode">free style avec qr code</li>
+					<li id="choosePersonalWithQRCode">Objet personnel avec qr-code</li>
+                    <li id="chooseFreeStyle">free-style</li>
+                    <li id="chooseFreeStyleWithQRCode">free-style avec qr-code</li>
 				<!--
 					<li>project box</li>
 				-->
@@ -25,7 +25,7 @@
 				<h2>2. Informations</h2>
 				<ul class="form" id="configPersonal">
 					<li>
-						<label>Cet objet s'appele</label>
+						<label>Cet objet s'appelle</label>
 						<input placeholder="" type="text" id="configPersonalName" class="liveinput inputText" />
 					</li>
 					<li>
@@ -37,33 +37,33 @@
 						<input placeholder="ex. email, jabber ou mobile" type="text" id="configPersonalContact" class="liveinput inputText" />
 					</li>
 					<li>
-						<label>Prix estime en &euro;</label>
+						<label>Prix éstimé en &euro;</label>
 						<input type="number" min="0" id="configPersonalPrice" class="liveinput inputText" />
 					</li>
 					<li>
-						<label>Permissions</label>
+						<label>Pèrmissions</label>
 						<select id="configPersonalPermissions" class="liveinput inputSelect">
 							<option selected="selected">libre d'usage</option>
 							<option>libre d'usage apres initiation</option>
-							<option>reserve a un usage personnel</option>
-							<option>a vendre</option>
+							<option>reserve à un usage personnel</option>
+							<option>à vendre</option>
 						</select>
 					</li>
 					<li>
 						<label>Que faire si l'ojet encombre?</label>
 						<select id="configPersonalAnnoying" class="liveinput inputSelect">
-							<option selected="selected">evacuer</option>
+							<option selected="selected">évacuer</option>
 							<option>ne pas toucher!</option>
 							<option>deplacez ou rangez le</option>
 							<option>prevenir le proprietaire</option>
 						</select>
 					</li>
 					<li>
-						<label>que faire si l'objet est casse?</label>
+						<label>que faire si l'objet est cassé?</label>
 						<select id="configPersonalBroken" class="liveinput inputSelect">
-							<option selected="selected">evacuer</option>
-							<option>remplacer &amp; prevenir le proprietaire </option>
-							<option>prevenir le proprietaire</option>
+							<option selected="selected">évacuer</option>
+							<option>remplacer &amp; prévenir le proprietaire </option>
+							<option>prévenir le proprietaire</option>
 						</select>
 					</li>
 					<li>
@@ -77,7 +77,7 @@
 				</ul>
 				<ul class="form" id="configFreeStyle">
 					<li>
-						<label>Hint: Vous pouvez placer de alises HTML ici!</label>
+						<label>Vous pouvez placer de alises HTML dans ce champ!</label>
 						<textarea id="configFreeStyleText" class="liveinput inputText">votre texte ici…</textarea>
 					</li>
 				</ul>
@@ -91,16 +91,16 @@
 					<li id="outputPersonal">
 						<span id="displayPersonalName" class="livedisplay highlight"></span>
 						<span id="surrPersonalOwner">
-							est a
+							est à
 							<span id="displayPersonalOwner" class="livedisplay highlight"></span>.
 						</span>
 						<span>Il est </span>
 						<span class="livedisplay highlight" id="displayPersonalPermissions"></span>.
 						<span id="surrPersonalPrice">
-							Il coute a peut pres <span class="highlight">&euro;</span><span class="livedisplay highlight" id="displayPersonalPrice"></span>.
+							Il coute à peut près <span class="highlight">&euro;</span><span class="livedisplay highlight" id="displayPersonalPrice"></span>.
 						</span>
 
-						<span>Si il est casse,</span>
+						<span>Si il est cassé,</span>
 						<span id="displayPersonalBroken" class="livedisplay highlight"></span>.
 						<span>si il encombre,</span>
 						<span id="displayPersonalAnnoying" class="livedisplay highlight"></span>.
@@ -113,23 +113,23 @@
                         <span id="displayPersonalQRCode" class="qrCode"></span>
 						<span id="displayPersonalNameWithQRCode" class="livedisplay highlight"></span>
 						<span id="surrPersonalOwnerWithQRCode">
-							est a
+							est à
 							<span id="displayPersonalOwnerWithQRCode" class="livedisplay highlight"></span>.
 						</span>
 						<span>Il est </span>
 						<span class="livedisplay highlight" id="displayPersonalPermissionsWithQRCode"></span>.
 						<span id="surrPersonalPriceWithQRCode" style="display:none">
-							Il coute a peut pres <span class="highlight">&euro;</span><span class="livedisplay highlight" id="displayPersonalPriceWithQRCode"></span>.
+							Il coute à peut près <span class="highlight">&euro;</span><span class="livedisplay highlight" id="displayPersonalPriceWithQRCode"></span>.
 						</span>
 
-						<span>Si il est casse,</span>
+						<span>Si il est cassé,</span>
 						<span id="displayPersonalBrokenWithQRCode" class="livedisplay highlight"></span>.
 						<span>Si il encombre,</span>
 						<span id="displayPersonalAnnoyingWithQRCode" class="livedisplay highlight"></span>.
 						<br /><span id="surrPersonalContactWithQRCode">Contact: </span>
 						<span id="displayPersonalContactWithQRCode" class="livedisplay highlight"></span>
 						<br /><span id="surrPersonalUrlWithQRCode">Plus d'infos: </span><span class="livedisplay" id="displayPersonalUrlWithQRCode"></span>
-						<br /><span>Cree le:</span> <span class="livedisplay displayDate" id="displayPersonalDateWithQRCode"></span>
+						<br /><span>Crée le:</span> <span class="livedisplay displayDate" id="displayPersonalDateWithQRCode"></span>
 					</li>                    
 					<li id="outputFreeStyle">
 						<span id="displayFreeStyleText" class="livedisplay">Votre texte ici...</span>
@@ -146,9 +146,9 @@
 
 		<div id="finish" class="section doNotPrint">
 			<h2>4. finito!</h2>
-			<p>Ca a l'air bien?</p>
+			<p>ça a l'air bien?</p>
 			<a href="#" class="printBt" onClick="printLabel();">Imprimer!</a>
-            <a href="#" class="printBt" onClick="generateImage();">Generer un PNG</a>
+            <a href="#" class="printBt" onClick="generateImage();">Génerer un PNG</a>
 		</div>
 
 		<script src="js/jquery-2.1.1.min.js"></script>
