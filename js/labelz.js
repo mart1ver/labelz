@@ -97,7 +97,7 @@ function chooseType() {
 
             if(qrcodeFreeStyle == null) {
                 qrcodeFreeStyle = new QRCode("displayFreeStyleQRCode", {
-                    text: "votre texte ici...",
+                    text: "Votre texte ici...",
                     width: 75,
                     height: 75,
                     colorDark : "#000000",
