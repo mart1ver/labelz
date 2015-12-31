@@ -38,11 +38,11 @@
 						<input placeholder="ex. email, jabber ou mobile" type="text" id="configPersonalContact" class="liveinput inputText" />
 					</li>
 					<li>
-						<label>Prix éstimé en &euro;</label>
+						<label>Prix estimé en &euro;</label>
 						<input type="number" min="0" id="configPersonalPrice" class="liveinput inputText" />
 					</li>
 					<li>
-						<label>Pèrmissions</label>
+						<label>Permissions</label>
 						<select id="configPersonalPermissions" class="liveinput inputSelect">
 							<option selected="selected">libre d'usage</option>
 							<option>libre d'usage apres initiation</option>
@@ -56,19 +56,19 @@
 							<option selected="selected">évacuer</option>
 							<option>ne pas toucher!</option>
 							<option>deplacez ou rangez le</option>
-							<option>prevenir le proprietaire</option>
+							<option>prévenir le propriétaire</option>
 						</select>
 					</li>
 					<li>
-						<label>que faire si l'objet est cassé?</label>
+						<label>Que faire si l'objet est cassé?</label>
 						<select id="configPersonalBroken" class="liveinput inputSelect">
 							<option selected="selected">évacuer</option>
-							<option>remplacer &amp; prévenir le proprietaire </option>
-							<option>prévenir le proprietaire</option>
+							<option>remplacer &amp; prévenir le propriétaire </option>
+							<option>prévenir le propriétaire</option>
 						</select>
 					</li>
 					<li>
-						<label>URL pour plus d'infos </label>
+						<label>URL. pour plus d'infos </label>
 						<input type="url" placeholder="ex. page du Wiki" id="configPersonalUrl" class="liveinput inputText" />
 					</li>
 					<li>
@@ -95,19 +95,19 @@
 							est à
 							<span id="displayPersonalOwner" class="livedisplay highlight"></span>.
 						</span>
-						<span>Il ou elle est </span>
+						<span>, est </span>
 						<span class="livedisplay highlight" id="displayPersonalPermissions"></span>.
 						<span id="surrPersonalPrice">
-							Il/elle coute à peut près <span class="highlight">&euro;</span><span class="livedisplay highlight" id="displayPersonalPrice"></span>.
+							, coûte à peu près <span class="highlight">&euro;</span><span class="livedisplay highlight" id="displayPersonalPrice"></span>.
 						</span>
 
-						<span>Si il/elle est cassé,</span>
+						<span>. Si l'objet est cassé,</span>
 						<span id="displayPersonalBroken" class="livedisplay highlight"></span>.
-						<span>si il/elle encombre,</span>
+						<span>, si il encombre,</span>
 						<span id="displayPersonalAnnoying" class="livedisplay highlight"></span>.
 						<br /><span id="surrPersonalContact">Contact: </span>
 						<span id="displayPersonalContact" class="livedisplay highlight"></span>
-						<br /><span id="surrPersonalUrl">plus d'Infos: </span><span class="livedisplay" id="displayPersonalUrl"></span>
+						<br /><span id="surrPersonalUrl">Plus d'infos: </span><span class="livedisplay" id="displayPersonalUrl"></span>
 						<br /><span>Créé le:</span> <span class="livedisplay displayDate" id="displayPersonalDate"></span>
 					</li>
 					<li id="outputPersonalWithQRCode">
@@ -117,20 +117,20 @@
 							est à
 							<span id="displayPersonalOwnerWithQRCode" class="livedisplay highlight"></span>.
 						</span>
-						<span>Il ou elle est </span>
+						<span>, est </span>
 						<span class="livedisplay highlight" id="displayPersonalPermissionsWithQRCode"></span>.
 						<span id="surrPersonalPriceWithQRCode" style="display:none">
-							Il/elle coute à peut près <span class="highlight">&euro;</span><span class="livedisplay highlight" id="displayPersonalPriceWithQRCode"></span>.
+							, coûte à peu près <span class="highlight">&euro;</span><span class="livedisplay highlight" id="displayPersonalPriceWithQRCode"></span>.
 						</span>
 
-						<span>Si il/elle est cassé,</span>
+						<span>. Si l'objet est cassé,</span>
 						<span id="displayPersonalBrokenWithQRCode" class="livedisplay highlight"></span>.
-						<span>Si il/elle encombre,</span>
+						<span>, si il encombre,</span>
 						<span id="displayPersonalAnnoyingWithQRCode" class="livedisplay highlight"></span>.
 						<br /><span id="surrPersonalContactWithQRCode">Contact: </span>
 						<span id="displayPersonalContactWithQRCode" class="livedisplay highlight"></span>
 						<br /><span>Créé le:</span> <span class="livedisplay displayDate" id="displayPersonalDateWithQRCode"></span>
-						<br /><br /><br /><span id="surrPersonalUrlWithQRCode">+ d'infos: </span><span class="livedisplay" id="displayPersonalUrlWithQRCode"></span>
+						
 					</li>                    
 					<li id="outputFreeStyle">
 						<span id="displayFreeStyleText" class="livedisplay">Votre texte ici...</span>
@@ -147,7 +147,7 @@
 
 		<div id="finish" class="section doNotPrint">
 			<h2>4. finito!</h2>
-			<p>ça a l'air bien?</p>
+			<p>Ça a l'air bien?</p>
 			<a href="#" class="printBt" onClick="printLabel();">Imprimer!</a>
             <a href="#" class="printBt" onClick="generateImage();">Génerer un PNG</a>
 		</div>
