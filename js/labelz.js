@@ -19,8 +19,10 @@ if ( dd < 10 ) {
 if ( mm < 10 ) {
 	mm = '0' + mm;
 }
-today = yyyy+'-'+mm+'-'+dd;
-
+//
+//today = yyyy+'-'+mm+'-'+dd;
+//format de date francais
+today = dd+'/'+mm'/'+'/'+yyyy;
 $(document).ready( function() {
 	$('.currentDate').val(today);
 
@@ -84,7 +86,7 @@ function chooseType() {
 
             if(qrcodePersonal == null) {
                 qrcodePersonal = new QRCode("displayPersonalQRCode", {
-                    text: "Your text goes here...",
+                    text: "Votre texte ici...",
                     width: 75,
                     height: 75,
                     colorDark : "#000000",
@@ -95,7 +97,7 @@ function chooseType() {
 
             if(qrcodeFreeStyle == null) {
                 qrcodeFreeStyle = new QRCode("displayFreeStyleQRCode", {
-                    text: "Your text goes here...",
+                    text: "votre texte ici...",
                     width: 75,
                     height: 75,
                     colorDark : "#000000",
