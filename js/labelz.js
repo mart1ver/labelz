@@ -22,7 +22,7 @@ if ( mm < 10 ) {
 //
 //today = yyyy+'-'+mm+'-'+dd;
 //format de date francais
-today = dd+'/'+mm'/'+'/'+yyyy;
+today = dd+'/'+mm+'/'+yyyy;
 $(document).ready( function() {
 	$('.currentDate').val(today);
 
