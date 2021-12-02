@@ -5,7 +5,7 @@ Label configurator version fr
 
 
 Developpe a l'origine pour le Metalab de Vienne.
-Adapte en francais pour l'Emancipo-la , paris
+Adapte en francais pour l'Emancipo-lab. , paris
 
 Tested with Brother Ptouch QL700
 Will be tested whith cheeper 
